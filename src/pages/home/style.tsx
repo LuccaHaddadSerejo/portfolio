@@ -2,16 +2,17 @@ import { styled } from '@/styles/stitches.config';
 import { Flex } from '@/styles/Global';
 import { Button } from '@/styles/Buttons';
 
-import background from '@/public/static/img/background/wave2.svg';
-import backgroundTwo from '@/public/static/img/background/clouds.svg';
+import background from '@/public/static/img/background/poly.svg';
+import backgroundTwo from '@/public/static/img/background/cloudy.svg';
 
 export const Header = styled('header', {
   backgroundColor: '$brand1',
   padding: '12rem 0 8rem 0',
   backgroundImage: `url(${background})`,
-  backgroundRepeat: 'repeat',
-  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: '100% 100%',
   '@mobile': {
+    backgroundSize: 'cover',
     padding: '9rem 0 6rem 0',
   },
 });
@@ -60,6 +61,7 @@ export const AboutMeSection = styled('section', {
   backgroundRepeat: 'no-repeat',
   backgroundSize: '100% 100%',
   '@mobile': {
+    backgroundSize: 'cover',
     padding: '9rem 0 6rem 0',
   },
 });
