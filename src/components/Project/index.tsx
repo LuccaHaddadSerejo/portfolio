@@ -32,8 +32,6 @@ export const Project = (): JSX.Element => {
 
       const json = await data.json();
 
-      console.log(json);
-
       setRepositories(json);
 
       if (!data.ok) {
